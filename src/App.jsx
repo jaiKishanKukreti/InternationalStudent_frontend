@@ -21,7 +21,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/student/create",
+        "https://internationalstudent-backend.onrender.com/student/create",
         {
           method: "POST",
           headers: {
@@ -50,7 +50,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/student/${studentId}`
+        `https://internationalstudent-backend.onrender.com/student/${studentId}`
       );
 
       const data = await response.json();
@@ -69,7 +69,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/student/"
+        "https://internationalstudent-backend.onrender.com/student/"
       );
 
       const data = await response.json();
